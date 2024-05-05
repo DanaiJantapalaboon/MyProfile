@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+
+    <!-- Primary Meta Tags -->
+    <title>DanaiDev | Home</title>
+    <meta name="title" content="DanaiDev - FullStack Web Developer" />
+    <meta name="description" content="A web developer who burning the midnight to deliver your order masterpieces." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://danaidev.netlify.app/" />
+    <meta property="og:title" content="DanaiDev - FullStack Web Developer" />
+    <meta property="og:description" content="A web developer who burning the midnight to deliver your order masterpieces." />
+    <meta property="og:image" content="pic0.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://danaidev.netlify.app/" />
+    <meta property="twitter:title" content="DanaiDev - FullStack Web Developer" />
+    <meta property="twitter:description" content="A web developer who burning the midnight to deliver your order masterpieces." />
+    <meta property="twitter:image" content="pic0.webp" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.5/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(to right, #333333 , #000);
+
+            & .navbar {
+                color: #fff;
+            }
+
+            & .navbar, .footer {
+                color: #fff;
+                opacity: 0.4;
+                transition: 0.5s;
+            }
+
+            & .hero {
+                color: #fff;
+                opacity: 0.4;
+                transition: 0.5s;
+            }
+            & .hero:hover, .navbar:hover, .footer:hover {
+                color: #fff;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="mx-auto">
+            <ul class="menu menu-horizontal">
+                <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
+                <li><a href="pricing.html" class="hover:text-yellow-400">Services & Pricing</a></li>
+                <li><a href="contact.html" class="hover:text-yellow-400">Contact</a></li>
+                <li><a href="https://danaijant.netlify.app/" class="hover:text-yellow-400" target="_blank">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="container mx-auto">
+        <div class="hero lg:pt-12 lg:pb-12">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <figure>
+                    <img src="pic2.webp" class="max-w-xs rounded-lg"/>
+                </figure>
+                <div>
+                    <h1 class="text-4xl font-bold text-yellow-400">Services & Pricing</h1>
+                    <div class="overflow-x-auto mt-4">
+                        <table class="table table-sm">
+                            <thead class="text-base-100">
+                                <tr>
+                                    <th></th>
+                                    <th>Jobs</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <td>Informative Website (<u>without</u> Content Management)</td>
+                                    <td>900 THB / page</td>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <td>Informative Website (with Content Management)</td>
+                                    <td>5,500 THB (3 pages, If more +1,200 THB per pages)</td>
+                                </tr>
+                                <tr>
+                                    <th>3</th>
+                                    <td>Web Application</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>3.1</th>
+                                    <td>Authentication with User Management (Password-Based)</td>
+                                    <td>2,500 THB</td>
+                                </tr>
+                                <tr>
+                                    <th>3.2</th>
+                                    <td>Dashboard Visualization</td>
+                                    <td>3,500 THB</td>
+                                </tr>
+                                <tr>
+                                    <th>3.3</th>
+                                    <td>Content Management</td>
+                                    <td>2,000 THB / content</td>
+                                </tr>
+                                <tr>
+                                    <th>3.4</th>
+                                    <td>Business-Specific Requirement</td>
+                                    <td><a href="contact.html" class="hover:text-yellow-400">Contact</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="mt-4">- The price does not include domain name registration and web hosting.</p>
+                    <p>- 100% code, mainly using Bootstrap, PHP Laravel and MySQL.</p>
+                    <p>- All are Responsive web design.</p>
+                    <a href="contact.html" class="btn btn-sm btn-warning mt-4">Need a Website ?</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="footer items-center px-4 py-6 text-base-100">
+            <aside class="items-center grid-flow-col">
+                <p>Copyright © <script>document.write(new Date().getFullYear())</script> Danai Jantapalaboon - All right reserved.</p>
+            </aside> 
+            <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+                <a href="https://web.facebook.com/hatsune.poysama/" target="_blank" class="hover:text-yellow-400"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                <a href="https://www.youtube.com/@DanaiJant" target="_blank" class="hover:text-yellow-400"><i class="fa-brands fa-youtube fa-2x"></i></a>
+                <a href="#" onclick="line_modal.showModal()" class="hover:text-yellow-400"><i class="fa-brands fa-line fa-2x"></i></a>
+                <a href="https://github.com/DanaiJantapalaboon" target="_blank" class="hover:text-yellow-400"><i class="fa-brands fa-github fa-2x"></i></a>
+            </nav>
+        </footer>
+
+    </div>
+
+    <dialog id="line_modal" class="modal">
+        <div class="modal-box">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+            <h3 class="font-bold text-lg">Please Add My Contact!</h3>
+            <img src="qrcode.jpg" class="mx-auto w-1/2" alt="">
+        </div>
+    </dialog>
+
+
+
+</body>
+</html>
