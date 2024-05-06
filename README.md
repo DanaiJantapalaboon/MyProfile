@@ -18,3 +18,4 @@ Get in Touch
 I'm open to collaboration opportunities and freelance projects. Feel free to reach out to me via email at danai.athlon@gmail.com or connect with me on Facebook or Line.
 
 Thank you for visiting my portfolio!
+https://danaidev.netlify.app/
