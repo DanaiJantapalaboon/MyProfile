@@ -17,7 +17,7 @@ Booking Application: A booking platform developed with PHP OOP, Bootstrap4 and M
 
 <h3>Get in Touch</h3>
 I'm open to collaboration opportunities and freelance projects. Feel free to reach out to me via email at danai.athlon@gmail.com or connect with me on Facebook or Line.
-
+<br>
 Thank you for visiting my portfolio!
 <br>
 https://danaidev.netlify.app/
