@@ -8,7 +8,8 @@ I'm passionate about creating robust and user-friendly web applications. With ex
 Front-end: HTML5, CSS3, JavaScript
 Back-end: PHP, Laravel 10 (Primaliry)
 Databases: MySQL (Mainly), MSSQL
-Projects
+
+<h3>Projects</h3>
 Here are a few projects I've worked on:
 
 E-commerce Website: A full-fledged e-commerce platform built with Laravel, Bootstrap5 and MySQL. Users can browse products, add items to cart, and complete orders securely.Link to project
