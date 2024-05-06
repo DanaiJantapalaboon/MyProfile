@@ -1,7 +1,7 @@
 <h1>Danai Jantapalaboon - Full-Stack Developer</h1>
 Welcome to my personal portfolio website! I'm Danai Jantapalaboon, a full-stack developer based in Thailand. This repository contains the source code for my portfolio website, where you can learn more about me, my skills, and the projects I've worked on.
 
-About Me
+<h3>About Me</h3>
 I'm passionate about creating robust and user-friendly web applications. With experience in both front-end and back-end development, I enjoy bringing ideas to life through code. My goal is to continuously learn and improve while delivering high-quality solutions to my clients.
 
 Technologies
