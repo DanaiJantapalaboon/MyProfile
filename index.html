@@ -34,29 +34,42 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+    
+        html, body {
+            height: 100%;
+            background-image: linear-gradient(to right, #333333, #000);
+        }
+    
         body {
-            background-image: linear-gradient(to right, #333333 , #000);
-
-            & .navbar {
-                color: #fff;
-            }
-
-            & .navbar, .footer {
-                color: #fff;
-                opacity: 0.4;
-                transition: 0.5s;
-            }
-
-            & .hero {
-                color: #fff;
-                opacity: 0.4;
-                transition: 0.5s;
-            }
-            & .hero:hover, .navbar:hover, .footer:hover {
-                color: #fff;
-                opacity: 1;
-            }
+            display: flex;
+            flex-direction: column;
+        }
+    
+        section.container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    
+        .navbar, .footer {
+            color: #fff;
+            opacity: 0.4;
+            transition: 0.5s;
+        }
+    
+        .hero {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            opacity: 0.4;
+            transition: 0.5s;
+        }
+    
+        .hero:hover, .navbar:hover, .footer:hover {
+            opacity: 1;
         }
     </style>
 </head>
@@ -75,14 +88,14 @@
 
 
     <section class="container mx-auto">
-        <div class="hero lg:pt-32 lg:pb-32">
+        <div class="hero">
             <div class="hero-content flex-col lg:flex-row-reverse">
                 <figure>
                     <img src="pic1.webp" class="max-w-xs rounded-lg"/>
                 </figure>
                 <div>
                     <h1 class="text-4xl font-bold text-yellow-400">Danai Jantapalaboon</h1>
-                    <small>A web developer who burning the midnight to deliver your order masterpieces.</small>
+                    <small>A web developer who burns the midnight to deliver your order masterpieces.</small>
                     <p class="py-3 text-yellow-400">-------------------------------------------</p>
                     <p><i class="fa-solid fa-desktop text-yellow-400"></i> Responsive Design : HTML, CSS, Javascript, Bootstrap, TailwindCSS</p>
                     <p><i class="fa-solid fa-gears text-yellow-400"></i> Backend Stack : PHP Laravel (Primarily), MySQL</p>
@@ -92,9 +105,9 @@
         </div>
 
 
-        <footer class="footer items-center px-4 py-6 text-base-100">
+        <footer class="footer items-center px-4 pb-6 text-base-100">
             <aside class="items-center grid-flow-col">
-                <p>Copyright © <script>document.write(new Date().getFullYear())</script> Danai Jantapalaboon - All right reserved.</p>
+                <p>Copyright © <script>document.write(new Date().getFullYear())</script> Danai Jantapalaboon - All rights reserved.</p>
             </aside> 
             <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
                 <a href="https://web.facebook.com/hatsune.poysama/" target="_blank" class="hover:text-yellow-400"><i class="fa-brands fa-facebook fa-2x"></i></a>
@@ -103,10 +116,9 @@
                 <a href="https://github.com/DanaiJantapalaboon" target="_blank" class="hover:text-yellow-400"><i class="fa-brands fa-github fa-2x"></i></a>
             </nav>
         </footer>
-
-        
     </section>
 
+    
     <dialog id="line_modal" class="modal">
         <div class="modal-box">
             <form method="dialog">
