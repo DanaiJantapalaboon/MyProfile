@@ -6,7 +6,7 @@
     <link rel="icon" href="icon.png" type="image/x-icon">
 
     <!-- Primary Meta Tags -->
-    <title>DanaiDev | Home</title>
+    <title>DanaiDev | QRCode Generator</title>
     <meta name="title" content="DanaiDev - FullStack Web Developer" />
     <meta name="description" content="A web developer who burning the midnight to deliver your order masterpieces." />
 
@@ -23,6 +23,9 @@
     <meta property="twitter:title" content="DanaiDev - FullStack Web Developer" />
     <meta property="twitter:description" content="A web developer who burning the midnight to deliver your order masterpieces." />
     <meta property="twitter:image" content="pic0.webp" />
+
+    <!--JS QRCode https://cdnjs.com/libraries/qrcodejs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.5/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -91,61 +94,19 @@
     <section class="container mx-auto">
         <div class="hero">
             <div class="hero-content flex-col lg:flex-row-reverse">
-                <figure>
-                    <img src="pic2.webp" class="max-w-xs rounded-lg"/>
-                </figure>
                 <div>
-                    <h1 class="text-4xl font-bold text-yellow-400">Services & Pricing</h1>
-                    <table class="table table-sm">
-                        <thead class="text-base-100">
-                            <tr>
-                                <th></th>
-                                <th>Jobs</th>
-                                <th>Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>1</th>
-                                <td>Informative Website (<u>without</u> Content Management)</td>
-                                <td>900 THB / page</td>
-                            </tr>
-                            <tr>
-                                <th>2</th>
-                                <td>Informative Website (with Content Management)</td>
-                                <td>5,500 THB (3 pages, If more +1,200 THB per pages)</td>
-                            </tr>
-                            <tr>
-                                <th>3</th>
-                                <td>Web Application</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th>3.1</th>
-                                <td>Authentication with User Management (Password-Based)</td>
-                                <td>2,500 THB</td>
-                            </tr>
-                            <tr>
-                                <th>3.2</th>
-                                <td>Dashboard Visualization</td>
-                                <td>3,500 THB</td>
-                            </tr>
-                            <tr>
-                                <th>3.3</th>
-                                <td>Content Management</td>
-                                <td>2,000 THB / content</td>
-                            </tr>
-                            <tr>
-                                <th>3.4</th>
-                                <td>Business-Specific Requirement</td>
-                                <td><a href="contact.html" class="hover:text-yellow-400">Contact</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p class="mt-4">- The price does not include domain name registration and web hosting.</p>
-                    <p>- 100% code, mainly using Bootstrap, PHP Laravel 10 and MySQL.</p>
-                    <p>- Always responsive web design.</p>
-                    <a href="contact.html" class="btn btn-sm btn-warning mt-4">Need a Website ?</a>
+                    <h1 class="text-4xl font-bold text-yellow-400">QRCode Generator</h1>
+                    <small>A free QRCode generator using qrcodejs library. Unlimited, Free and no Ads!</small>
+                    <form class="py-3">
+                        <input type="text" id="input_text" placeholder="Paste your text.." class="input input-sm input-warning w-full text-neutral" required>
+                        <button type="button" class="button btn btn-sm btn-warning mt-1">Create</button>
+                        <button type="reset" class="btn btn-sm btn-neutral">Clear</button>
+                    </form>
+                </div>
+                <div class="canvas-qrcode">
+                    <figure class="qr-code">
+                        <script src="js/qrcode.js"></script>
+                    </figure>
                 </div>
             </div>
         </div>
@@ -162,10 +123,9 @@
                 <a href="https://github.com/DanaiJantapalaboon" target="_blank" class="hover:text-yellow-400"><i class="fa-brands fa-github fa-2x"></i></a>
             </nav>
         </footer>
-
-
     </section>
 
+    
     <dialog id="line_modal" class="modal">
         <div class="modal-box">
             <form method="dialog">
