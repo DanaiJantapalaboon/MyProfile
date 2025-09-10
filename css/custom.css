@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+html, body {
+    height: 100%;
+    background-image: linear-gradient(to right, #333333, #000);
+}
+    
+body {
+    display: flex;
+    flex-direction: column;
+}
+    
+section.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+}
+    
+.navbar, .footer {
+    color: #fff;
+    opacity: 0.4;
+    transition: 0.5s;
+    z-index: 1;
+}
+    
+.hero {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+.hero:hover, .navbar:hover, .footer:hover {
+    opacity: 1;
+}
+
+#canvas {
+    position: fixed;
+    z-index: 0;
+}
